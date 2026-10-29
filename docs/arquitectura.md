@@ -16,3 +16,5 @@ flowchart TD
 
 Si los productos se almacenaran en una base de datos, la aplicación tendría que conectarse a ella para consultar los productos. 
 Los datos dejarían de estar guardados directamente en el código y sería más fácil mantenerlos y actualizarlos sin modificar el archivo app.js
+
+La arquitectura actual permite consultar losproductos mediante los endpoints de la API.
