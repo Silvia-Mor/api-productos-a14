@@ -1,0 +1,25 @@
+site_name: API de productos
+
+theme:
+  name: material
+  languaje: es
+
+
+nav: 
+  - Inicio: index.md
+  - Instalacion: instalacion.md
+  - Arquitectura: arquitectura.md
+  - Depliegue: despliegue.md
+  - Operacion: operacion.md
+  - API: api.md
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+
+plugins: 
+  - search
+  - mermaid2

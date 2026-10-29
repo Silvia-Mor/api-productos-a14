@@ -1,0 +1,35 @@
+openapi: "3.0.0"
+info:
+  title: "API de productos"
+  version: "1.0.0"
+  description: "API REST para consultar productos"
+servers:
+  - url: http://localhost:3000
+
+paths:
+  /api/productos: # primer bloque
+    get:
+      summary: "Obtener todos los productos"
+      responses:
+        "200":
+          description: "Lista de productos obtenida correctamente"
+          
+  /api/productos/{id}: # segundo bloque
+    get:
+      summary: "Obtener un producto por su identificador"
+      parameters: # aquí se definen los parámetro que necesita la petición
+        - name: id
+          in: path
+          required: true
+          schema:
+           type: integer
+      responses: # aquí se indican las respuestas posibles del endpoint.
+        "200":
+         description: "Producto encontrado"
+        "404":
+         description: "Producto no encontrado"  
+
+
+
+  
+
